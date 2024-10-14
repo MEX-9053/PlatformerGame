@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple platformer game">
+    <meta name="keywords" content="platformer, game">
+    <link rel="stylesheet" href="style/game.css">
+    <title>Игра</title>
+</head>
+<body>
+    <canvas></canvas>
+    <div class="wrapper">
+        <div id="interface">
+            <p id="name">Игрок</p>
+            <div id="end">
+                <p id="win">Вы выиграли</p>
+                <p id="pass">Вы прошли уровень</p>
+                <p id="lose">Вы проиграли</p>
+                <p id="pause">Пауза</p>
+            </div>
+            <div id="stats">
+                <p id="timer">Время: 00:00:00</p>
+                <p id="score">Очки: 0</p>
+                <p id="health">Здоровье: 100</p>
+            </div>
+            <div id="buttons">
+                <button id="menu" onclick="location.href = 'index.html'">Меню</button>
+                <button id="retry" onclick="location.reload()">Заново</button>
+                <button id="next" onclick="saveDate()">Далее</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <div>
+                <button id="up"><img src="img/buttons/btn_up.png" alt="keybutton"></button>
+                <button id="down"><img src="img/buttons/btn_down.png" alt="keybutton"></button>
+            </div>
+            <div>
+                <button id="left"><img src="img/buttons/btn_left.png" alt="keybutton"></button>
+                <button id="right"><img src="img/buttons/btn_right.png" alt="keybutton"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

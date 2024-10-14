@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <meta name="description" content="Simple platformer game">
+    <meta name="keywords" content="platformer, game">
+    <title>Меню</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="warning">
+            <p class="warning-text"></p>
+        </div>
+        <div class="container">
+            <h1>Платформер</h1>
+            <div class="characters">
+                <h2>Персонажи</h2>
+                <p>Выберите своего персонажа</p>
+                <div class="character-slider">
+                    <button class="prev">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 10L15 20L25 30" stroke="#3b3b3b" stroke-width="3" />
+                          </svg>
+                    </button>
+                    <div class="slider-wrapper">
+                        <div class="characters-box">
+                            <div class="character-item"><img src="img/char_1_main.png" alt="CharacterImage"></div>
+                            <div class="character-item"><img src="img/char_2_main.png" alt="CharacterImage"></div>
+                            <div class="character-item"><img src="img/char_3_main.png" alt="CharacterImage"></div>
+                        </div>
+                    </div>
+                    <button class="next">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 10L15 20L25 30" stroke="#3b3b3b" stroke-width="3" />
+                          </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="name">
+                <form>
+                    <input class="name-input" type="text" placeholder="Введите имя">
+                </form>
+            </div>
+            <div class="controls">
+                <h2>Управление</h2>
+                <p>Стрелка влево / A — Движение влево</p>
+                <p>Стрелка вправо / D — Движение вправо</p>
+                <p>Пробел / Стрелка вверх / W — Прыжок</p>
+                <p>Стрелка вниз / S — Спрыгнуть с платформы</p>
+                <p>Esc — Пауза</p>	
+            </div>
+            <p class="instruction">Перед игрой поверните устройство</p>
+            <button class="play">Играть</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
