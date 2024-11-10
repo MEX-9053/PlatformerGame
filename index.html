@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/style.css">
     <meta name="description" content="Simple platformer game">
     <meta name="keywords" content="platformer, game">
     <title>Меню</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="warning">
-            <p class="warning-text"></p>
-        </div>
         <div class="container">
-            <h1>Платформер</h1>
+            <h1>Web-runner</h1>
             <div class="characters">
                 <h2>Персонажи</h2>
                 <p>Выберите своего персонажа</p>
@@ -40,7 +37,7 @@
             </div>
             <div class="name">
                 <form>
-                    <input class="name-input" type="text" placeholder="Введите имя">
+                    <input class="name-input" type="text" placeholder="Введите имя" maxlength="21">
                 </form>
             </div>
             <div class="controls">
@@ -48,13 +45,13 @@
                 <p>Стрелка влево / A — Движение влево</p>
                 <p>Стрелка вправо / D — Движение вправо</p>
                 <p>Пробел / Стрелка вверх / W — Прыжок</p>
-                <p>Стрелка вниз / S — Спрыгнуть с платформы</p>
+                <p>Стрелка вниз / S — Спрыгнуть</p>
                 <p>Esc — Пауза</p>	
+                <p>R — Респавн (если застряли)</p>	
             </div>
-            <p class="instruction">Перед игрой поверните устройство</p>
             <button class="play">Играть</button>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@
 }
 .wrapper {
     min-height: 100%;
-    width: 1920px;
+    width: max-content;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -23,8 +23,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 700px;
-    margin: 0px auto;
+    max-width: 650px;
+    margin: 0px 50px;
     box-sizing: border-box;
 }
 html {
@@ -34,7 +34,7 @@ html {
 h1 {
     font-size: 60px;
     font-weight: 700;
-    margin: 20px 0px;
+    margin: 70px 0px 30px;
     text-align: center;
     line-height: 40px;
     text-shadow: #ececec 3px 3px 3px;
@@ -56,30 +56,13 @@ p {
     border-radius: 20px;
     width: min-content;
     padding: 10px 40px;
-    margin: 0px auto;
+    margin: 0px auto 20px;
     cursor: pointer;
     transition: 0.3s;
 }
 .play:hover {
     background: #37446e;
     color: #ececec;
-}
-.warning {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    top: 0;
-    left: 300px;
-    height: 50px;
-    width: 380px;
-    background: #ececec;
-    border-radius: 0px 0px 20px 20px;
-    transition: 0.3s;
-}
-.warning-text {
-    color: #37446e;
 }
 .characters {
     margin-bottom: 20px;
@@ -168,42 +151,4 @@ p {
 }
 .controls>p {
     margin-left: 40px;
-}
-.instruction {
-    margin-top: 10px;
-    display: none;
-}
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 35px;
-    }
-    h2 {
-        font-size: 20px;
-        font-weight: 600;
-        margin: 10px 0px;
-        text-align: center;
-    }
-    p { 
-        text-wrap: balance;
-        font-size: 16px;
-    }
-    .wrapper {
-        width: 768px;
-    }
-    .container {
-        max-width: 300px;
-    }
-    .name-input {
-        width: 300px;
-    }
-    .character-slider>button {
-        width: 50px;
-        height: 50px;
-    }
-}
-@media (max-width: 768px) {
-    .instruction {
-        display: flex;
-        text-align: center;
-    }
 }
